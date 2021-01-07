@@ -127,11 +127,11 @@ def open_image(image_file):
     qr.add_data(barcode_url)
     qr.best_fit()
     qr.print_ascii(invert=True)
+    if os.path.exists(image_file):
+        os.remove(image_file)
 
 
 def save_image(resp, image_file):
     with open(image_file, 'wb') as f:
         for chunk in resp.iter_content(chunk_size=1024):
             f.write(chunk)
-
-
