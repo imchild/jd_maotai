@@ -1,0 +1,11 @@
+certifi==2020.4.5.1
+chardet==3.0.4
+idna==2.9
+lxml==4.5.1
+meson==0.55.1
+Pillow==8.1.0
+pyzbar==0.1.8
+qrcode==6.1
+requests==2.23.0
+six==1.15.0
+urllib3==1.25.9
